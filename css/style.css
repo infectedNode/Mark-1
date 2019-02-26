@@ -1,11 +1,3 @@
-/*
-
-New Event
-
-http://www.templatemo.com/tm-486-new-event
-
-*/
-
 body {
 		background: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -262,7 +254,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+    background: linear-gradient(to right,rgba(0,0,0,.4),rgba(0,0,0,.4)), url('../images/intro-bg1.jpeg') fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -344,7 +336,7 @@ footer {
 
 #speakers .col-md-3 {
     display: block;
-    width: 100%;
+    width: 30%;
     padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 22px;
