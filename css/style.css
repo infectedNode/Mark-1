@@ -287,11 +287,7 @@ footer {
     Intro section
 -----------------------------------------*/
 #intro {
-<<<<<<< HEAD
     background: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../images/intro-bg1.jpeg') fixed;
-=======
-    background: url('../images/intro-bg.png') 50% 0 repeat-y fixed;
->>>>>>> 336440f80ec242959c7865b34eb209f06711f5ce
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -399,11 +395,7 @@ footer {
 
 #speakers .col-md-3 {
     display: block;
-<<<<<<< HEAD
-    width: 250px;
-=======
     width: 100%;
->>>>>>> 336440f80ec242959c7865b34eb209f06711f5ce
     padding-top: 30px;
     padding-bottom: 20px;
     margin: 0 auto;
