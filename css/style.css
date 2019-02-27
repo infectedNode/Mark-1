@@ -1,11 +1,3 @@
-/*
-
-New Event
-
-http://www.templatemo.com/tm-486-new-event
-
-*/
-
 body {
 		background: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -15,7 +7,7 @@ body {
 
 
 /*---------------------------------------
-    Typorgraphy
+    Typorgraphy              
 -----------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
@@ -26,7 +18,7 @@ h3,h5 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -57,7 +49,7 @@ a {
 
 
 /*---------------------------------------
-    General
+    General               
 -----------------------------------------*/
 .section-title {
   margin-bottom: 32px;
@@ -70,9 +62,9 @@ a {
 }
 
 #detail, #video,
-#speakers,
+#speakers, 
 #program,
-#sponsors,
+#sponsors, 
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -142,7 +134,7 @@ footer {
 
 
 /*---------------------------------------
-    Preloader section
+    Preloader section              
 -----------------------------------------*/
 .preloader {
   position: fixed;
@@ -190,7 +182,7 @@ footer {
 
 
 /*---------------------------------------
-    Navigation Links section
+    Navigation Links section              
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
@@ -247,7 +239,7 @@ footer {
     .custom-navbar {
         padding: 20px 0;
         border-bottom: 0;
-        background: 0 0;
+        background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
         background: #101010;
@@ -259,10 +251,10 @@ footer {
 
 
 /*---------------------------------------
-    Intro section
+    Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-bg.png') 50% 0 repeat-y fixed;
+    background: linear-gradient(to right,rgba(0,0,0,.4),rgba(0,0,0,.4)), url('../images/intro-bg1.jpeg') fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -286,7 +278,7 @@ footer {
 
 
 /*---------------------------------------
-   Overview  section
+   Overview  section              
 -----------------------------------------*/
 #overview img {
   position: relative;
@@ -296,7 +288,7 @@ footer {
 
 
 /*---------------------------------------
-    Detail section
+    Detail section              
 -----------------------------------------*/
 #detail {
     background: #222;
@@ -311,7 +303,7 @@ footer {
 
 
 /*---------------------------------------
-    Video section
+    Video section              
 -----------------------------------------*/
 #video iframe {
   border: none;
@@ -320,7 +312,7 @@ footer {
 
 
 /*---------------------------------------
-   Speakers section
+   Speakers section              
 -----------------------------------------*/
 #speakers {
     background: #f9f9f9;
@@ -344,7 +336,7 @@ footer {
 
 #speakers .col-md-3 {
     display: block;
-    width: 100%;
+    width: 30%;
     padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 22px;
@@ -358,7 +350,7 @@ footer {
 
 
 /*---------------------------------------
-   Program section
+   Program section              
 -----------------------------------------*/
 #program h4 {
     color: #808080;
@@ -417,7 +409,7 @@ footer {
 
 
 /*---------------------------------------
-    Regsiter section
+    Regsiter section              
 -----------------------------------------*/
 #register {
     background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
@@ -458,7 +450,7 @@ footer {
 
 
 /*---------------------------------------
-   Faq section
+   Faq section              
 -----------------------------------------*/
 #faq {
   background: #f9f9f9;
@@ -523,7 +515,7 @@ footer {
 
 
 /*---------------------------------------
-   Venue section
+   Venue section              
 -----------------------------------------*/
 #venue {
     background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
@@ -541,7 +533,7 @@ footer {
 
 
 /*---------------------------------------
-   Sponsors section
+   Sponsors section              
 -----------------------------------------*/
 #sponsors img {
   margin-top: 18px;
@@ -550,7 +542,7 @@ footer {
 
 
 /*---------------------------------------
-   Contact section
+   Contact section              
 -----------------------------------------*/
 #contact {
     background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
@@ -604,7 +596,7 @@ footer {
 
 
 /*---------------------------------------
-   Footer section
+   Footer section              
 -----------------------------------------*/
 footer {
   background-attachment: fixed;
@@ -636,7 +628,7 @@ footer {
 
 
 /*---------------------------------------
-   Social icon
+   Social icon             
 -----------------------------------------*/
 .social-icon {
     position: relative;
@@ -670,7 +662,7 @@ footer {
 
 
 /*---------------------------------------
-   Responsive styles
+   Responsive styles            
 -----------------------------------------*/
 @media (max-width: 980px) {
 
@@ -735,3 +727,4 @@ footer {
   }
 
 }
+
