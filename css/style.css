@@ -685,23 +685,30 @@ footer {
 /* Back top */
 .go-top {
   background-color: #222;
+  position: fixed;
   bottom: 2em;
   right: 2em;
-  color: #ffffff;
-  font-size: 32px;
   display: none;
-  position: fixed;
-  text-decoration: none;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   transition: all 0.4s ease-in-out;
+  padding: 0;
+}
+
+.go-top a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+}
+
+.go-top a i {
+  font-size: 40px;
 }
 
 .go-top:hover {
-    background: #f2545f;
     color: #ffffff;
+    background-color: #66ccff;
 }
 
 
@@ -793,7 +800,7 @@ footer {
 
   .custom-navbar .navbar-toggler.active .bar-1 {
     transform-origin: left;
-    transform: rotate(45deg);
+    transform: rotate(43deg);
   }
 
   .custom-navbar .navbar-toggler.active .bar-2 {
@@ -802,7 +809,7 @@ footer {
 
   .custom-navbar .navbar-toggler.active .bar-3 {
     transform-origin: left;
-    transform: rotate(-45deg);
+    transform: rotate(-43deg);
   }
   .top-nav-collapse .navbar-toggler {
     top: 5px;
@@ -816,7 +823,7 @@ footer {
     height: 30px;
     z-index: 80;
     border-radius: 50%;
-    background-image: radial-gradient(#101010, #2e2e2e, #414141, #5c5c5c);
+    background-image: radial-gradient(#101010, #252525, #414141, #5c5c5c, #959595);
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
@@ -904,6 +911,9 @@ footer {
     margin-top: 82px;
   }
 
+  .go-top:hover {
+    background-color: #222;
+  }
 }
 
 @media (max-width: 760px) {
