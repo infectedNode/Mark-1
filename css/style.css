@@ -47,6 +47,10 @@ a {
   outline: none;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 /*---------------------------------------
     General
@@ -393,6 +397,10 @@ footer {
 #speakers {
     background: #f9f9f9;
     text-align: center;
+}
+
+#speakers .row {
+  width: 100%;
 }
 
 #speakers h3 {
