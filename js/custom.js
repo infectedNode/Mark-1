@@ -9,7 +9,7 @@ $(window).load(function(){
 /* Mobile Navigation
     -----------------------------------------------*/
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -23,10 +23,17 @@ $(document).ready(function() {
 
   /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
+    $('.navbar-body a').click(function(){
+      $('.custom-navbar .navbar-toggler-back').removeClass('active');
+      $('.custom-navbar .navbar-body').removeClass('active');
+      $('.custom-navbar .navbar-toggler').removeClass('active')
     });
 
+    $('.custom-navbar .navbar-toggler').click(function() {
+        $('.custom-navbar .navbar-toggler-back').toggleClass('active');
+        $('.custom-navbar .navbar-body').toggleClass('active');
+        $('.custom-navbar .navbar-toggler').toggleClass('active');
+    });
 
  /* Parallax section
     -----------------------------------------------*/
