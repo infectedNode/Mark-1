@@ -228,19 +228,6 @@ footer {
     color: #66ccff;
 }
 
-.custom-navbar .navbar-toggle {
-    border: none;
-    padding-top: 10px;
-}
-
-.custom-navbar .navbar-toggle {
-    background-color: transparent;
-}
-
-.custom-navbar .navbar-toggle .icon-bar {
-    background: #ffffff;
-    border-color: transparent;
-}
 
 @media(min-width:768px) {
     .custom-navbar {
@@ -273,6 +260,32 @@ footer {
       margin-right: 0;
     }
 
+}
+
+@media(max-width:1200px) {
+  .custom-navbar .navbar-brand {
+    transform: translate(20px, 30px);
+  }
+  .custom-navbar .nav  {
+    transform: translate(0px,30px);
+    margin-right: -60px;
+  }
+  .custom-navbar .nav li a {
+    margin-right: 10px;
+  }
+  .custom-navbar.top-nav-collapse {
+    background: #101010;
+    padding: 0;
+}
+  .custom-navbar.top-nav-collapse .navbar-brand{
+    transform: translate(0, 0);
+  }
+  .custom-navbar.top-nav-collapse .nav {
+    transform: translate(0, 0);
+  }
+  .custom-navbar.top-nav-collapse .nav li a {
+    margin-right: 0;
+  }
 }
 
 
@@ -321,6 +334,22 @@ footer {
 #intro .container .row i {
   display: block;
   color: #fff;
+}
+
+@media(max-width:1200px) {
+  #intro .container .row .img-box {
+    height: 150px;
+    width: 100px;
+    display: inline-block;
+  }
+  #intro .container .row .fst {
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
+  #intro .container .row .thr {
+    letter-spacing: 20px;
+    font-size: 40px;
+  }
 }
 
 
@@ -717,8 +746,15 @@ footer {
 
   p {font-size: 13px;}
 
+  .custom-navbar {
+    padding: 5px;
+  }
   .custom-navbar .navbar-brand {
     font-size: 2rem;
+  }
+
+  .custom-navbar .nav {
+    margin-top: 15px;
   }
 
   .custom-navbar .nav li a {
@@ -726,7 +762,7 @@ footer {
 	line-height: 20px;
   }
 
-  #intro { height: 65vh; }
+  #intro { height: 100vh; }
 
   #video iframe {
     margin-top: 42px;
@@ -741,8 +777,105 @@ footer {
 
 @media (max-width: 768px) {
 
+  .custom-navbar .navbar-toggler {
+    border: none;
+    background-color: #101010;
+    padding-top: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    transition: .2s;
+  }
+
+  .custom-navbar .navbar-toggler.active .bar-1 {
+    transform-origin: left;
+    transform: rotate(45deg);
+  }
+
+  .custom-navbar .navbar-toggler.active .bar-2 {
+    opacity: 0;
+  }
+
+  .custom-navbar .navbar-toggler.active .bar-3 {
+    transform-origin: left;
+    transform: rotate(-45deg);
+  }
+  .top-nav-collapse .navbar-toggler {
+    top: 5px;
+  }
+
+  .custom-navbar .navbar-toggler-back{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    z-index: 80;
+    border-radius: 50%;
+    background-image: radial-gradient(#101010, #2e2e2e, #414141, #5c5c5c);
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  .custom-navbar .navbar-toggler-back.active {
+    transform: scale(80);
+  }
+
+ .custom-navbar .navbar-toggler .icon-bar {
+    background-color: #fff;
+    border-color: transparent;
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin: 7px 0; 
+    transition: all .2s;
+  }
+
+  .custom-navbar .navbar-body {
+    background-color: transparent;
+    position: fixed;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+    z-index: 90;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .custom-navbar .navbar-body.active {
+    left: 50%;
+  }
+
+  .custom-navbar .nav {
+    margin-top: 0;
+    transform: translate(0,0);
+    margin-right: 0;
+}
+
   .custom-navbar .navbar-brand {
-    line-height: 20px;
+    /* line-height: 20px; */
+    font-size: 1.5rem;
+    padding: 15px;
+    background: transparent;
+  }
+
+  .custom-navbar .navbar-nav li {
+    text-align: center;
+  }
+
+  .custom-navbar .navbar-nav li a {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .custom-navbar.top-nav-collapse .navbar-brand {
+    /* font-size: 2rem; */
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
   }
 
   #overview img,
@@ -753,6 +886,10 @@ footer {
 
   .nav-tabs > li > a {
     font-size: 13px;
+  }
+
+  .custom-navbar .navbar-brand {
+    transform: translate(0px,0px);
   }
 
   #program img {
@@ -775,4 +912,19 @@ footer {
     height: 100vh;
   }
 
+}
+
+@media (max-width: 450px) {
+  #intro .container .row .img-box {
+    height: 100px;
+    width: 80px;
+  }
+  #intro .container .row .fst {
+    letter-spacing: 5px;
+    font-size: 30px;
+  }
+  #intro .container .row .thr {
+    letter-spacing: 15px;
+    font-size: 30px;
+  }
 }
