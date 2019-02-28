@@ -380,13 +380,14 @@ footer {
   width: 100%;
   max-width: 100%;
   height: auto;
+  border-top-right-radius: 50px 20px;
 }
 
-#speakers .col-md-3 {
+#speakers .col-sm-3 {
     display: block;
     width: 250px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 130px;
     margin: 0 auto;
     margin-bottom: 22px;
 }
