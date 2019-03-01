@@ -395,7 +395,7 @@ footer {
     text-align: center;
 }
 
-#speakers h3 {
+#speakers h2 {
     font-size: 18px;
     margin-bottom: 0px;
 }
@@ -410,6 +410,11 @@ footer {
   max-width: 100%;
   height: auto;
   border-top-right-radius: 50px 20px;
+}
+#speakers h1{
+  padding-top:10px;
+  font: 30px;
+  color: #000000
 }
 
 #speakers .col-sm-3 {
