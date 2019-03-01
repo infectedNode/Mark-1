@@ -464,7 +464,7 @@ footer {
 }
 
 #program img {
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .nav-tabs {
@@ -921,7 +921,7 @@ footer {
   }
 
   #program img {
-    padding-bottom: 32px;
+  /*  padding-bottom: 32px;*/
   }
 
   #sponsors img {
