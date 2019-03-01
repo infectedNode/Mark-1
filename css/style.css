@@ -47,6 +47,10 @@ a {
   outline: none;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 /*---------------------------------------
     General
@@ -395,7 +399,11 @@ footer {
     text-align: center;
 }
 
-#speakers h2 {
+#speakers .row {
+  width: 100%;
+}
+
+#speakers h3 {
     font-size: 18px;
     margin-bottom: 0px;
 }
@@ -713,8 +721,11 @@ footer {
 }
 
 .go-top:hover {
-    color: #ffffff;
     background-color: #66ccff;
+}
+
+.go-top:hover a {
+  color: #fff;
 }
 
 
