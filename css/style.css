@@ -716,8 +716,11 @@ footer {
 }
 
 .go-top:hover {
-    color: #ffffff;
     background-color: #66ccff;
+}
+
+.go-top:hover a {
+  color: #fff;
 }
 
 
