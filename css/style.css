@@ -777,14 +777,20 @@ footer {
    Contact section
 -----------------------------------------*/
 #contact {
-    background: url('../images/contact-bg.png') 50% 0 repeat-y fixed;
+    background: url('../images/contact.jpeg') fixed;
     background-size: cover;
     background-position: center center;
+    width: 100%;
 }
 
 #contact .contact_des {
   padding-top: 3rem;
   padding-right: 2rem;
+}
+
+#contact .contact_des h3 {
+  padding-bottom: 0;
+  margin-top: 40px;
 }
 
 #contact .contact_detail {
@@ -822,7 +828,7 @@ footer {
 }
 
 #contact input[type="submit"]:hover {
-  background: #f2545f;
+  background: #5bd4e4;
 }
 
 
