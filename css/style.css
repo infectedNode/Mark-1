@@ -30,7 +30,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h3 {
@@ -400,46 +400,189 @@ footer {
    Speakers section
 -----------------------------------------*/
 #speakers {
-    background: #f9f9f9;
+    background: #e9e9e9;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
 }
 
-#speakers .row {
+#speakers .heading {
+  margin: 0;
+  padding: 25px;
+}
+
+#speakers .heading h2 {
+  margin: 0;
+  padding: 5px;
+  font-weight: 400;
+}
+
+#speakers .heading span {
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  width: 40px;
+  display: inline-block;
+  background-color: rgb(44, 44, 44);
+}
+
+#speakers .members {
   width: 100%;
+  height: 500px;
+  background-color: #e9e9e9;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
 }
 
-#speakers h3 {
-    font-size: 18px;
-    margin-bottom: 0px;
-}
-
-#speakers h6 {
-  color: #666;
-  margin-top: 4px;
-}
-
-#speakers img {
-  width: 100%;
-  max-width: 100%;
+#speakers .members.active {
   height: auto;
-  border-top-right-radius: 50px 20px;
 }
 
-#speakers .col-sm-3 {
-    display: block;
-    width: 250px;
-    padding-top: 90px;
-    padding-bottom: 130px;
-    margin: 0 auto;
-    margin-bottom: 22px;
+#speakers .head {
+  height: auto;
 }
 
-#speakers .speakers-wrapper {
-    background: #ffffff;
-    padding-bottom: 22px;
+#speakers .members .card {
+  width: 225px;
+  height: 290px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  transition: .2s;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
 
+#speakers .members .card .card-front {
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/placeholder.png);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: 1s;
+  overflow: hidden;
+}
 
+#speakers .members .card:hover .card-front{
+  transform: rotateY(-180deg);
+}
+
+#speakers .members .card .card-front img {
+  width: 100%;
+  height: 100%;
+  /* opacity: .8; */
+}
+
+#speakers .members .card .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #101010;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 1s;
+  color: #fff;
+  overflow: hidden;
+}
+
+#speakers .members .card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+#speakers .card-back .details {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+#speakers .card-back .details .name {
+  font-size: 20px;
+  margin: 5px 0;
+  padding: 0;
+}
+
+#speakers .card-back .details .seperator {
+  margin: 5px 0;
+  padding: 0;
+  height: 2px;
+  width: 40px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+#speakers .card-back .details .links {
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+
+#speakers .card-back .details .links a {
+  display: inline-block;
+  background-color: #262626;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+  transition: .2s;
+}
+
+#speakers .card-back .details .links a .fa {
+  line-height: 36px;
+  font-size: 18px;
+}
+ 
+#speakers .card-back .details .links a:hover {
+  background-color: #5bd4e4;
+}
+
+#speakers .members-control {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 80px;
+  box-shadow: 0 -3px 5px rgba(0,0,0,.3);
+}
+
+#speakers .members-control.remove {
+  display: none;
+}
+
+#speakers .members-control .btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  background-color: #101010;
+  margin: 20px;
+  border-radius: 0;
+  transition: .5s;
+}
+
+#speakers .members-control .btn:hover {
+  background-color: #5bd4e4;
+}
+
+#speakers .members-control .btn p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
 
 /*---------------------------------------
    Program section
@@ -722,8 +865,11 @@ footer {
 }
 
 .go-top:hover {
-    color: #ffffff;
-    background-color: #66ccff;
+    background-color: #5bd4e4;
+}
+
+.go-top:hover a {
+  color: #fff;
 }
 
 
@@ -786,6 +932,11 @@ footer {
 
   #intro { height: 100vh; }
 
+  #speakers .members .card {
+    width: 160px;
+    height: 205px;
+  }
+
   #video iframe {
     margin-top: 42px;
   }
@@ -811,6 +962,10 @@ footer {
     width: 40px;
     padding: 5px;
     transition: .2s;
+  }
+
+  .custom-navbar .navbar-toggler.active {
+    background-color: transparent;
   }
 
   .custom-navbar .navbar-toggler.active .bar-1 {
@@ -914,8 +1069,10 @@ footer {
     transform: translate(0px,0px);
   }
 
-  #program img {
-  /*  padding-bottom: 32px;*/
+  #speakers .members .card {
+    width: 120px;
+    height: 155px;
+    margin: 5px;
   }
 
   #sponsors img {
@@ -951,5 +1108,26 @@ footer {
   #intro .container .row .thr {
     letter-spacing: 15px;
     font-size: 30px;
+  }
+  #speakers .members .card {
+    width: 180px;
+    height: 230px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 410px) {
+  #speakers .members .card {
+    width: 140px;
+    height: 180px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 340px) {
+  #speakers .members .card {
+    width: 120px;
+    height: 155px;
+    margin: 5px;
   }
 }
