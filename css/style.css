@@ -937,6 +937,26 @@ footer {
     height: 205px;
   }
 
+  #speakers .card-back .details {
+    top: 30%;
+    padding: 10px;
+  }
+  
+  #speakers .card-back .details .name {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  
+  #speakers .card-back .details .seperator {
+    margin: 5px 0;
+    height: 2px;
+    width: 40px;
+  }
+  
+  #speakers .card-back .details .links {
+    margin-top: 30px;
+  }
+
   #video iframe {
     margin-top: 42px;
   }
@@ -1079,6 +1099,26 @@ footer {
     margin: 5px;
   }
 
+  #speakers .card-back .details {
+    top: 15%;
+    padding: 10px;
+  }
+  
+  #speakers .card-back .details .name {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+  
+  #speakers .card-back .details .seperator {
+    margin: 5px 0;
+    height: 2px;
+    width: 30px;
+  }
+  
+  #speakers .card-back .details .links {
+    margin-top: 12px;
+  }
+
   #sponsors img {
     padding-top: 22px;
   }
@@ -1121,6 +1161,25 @@ footer {
     height: 230px;
     margin: 5px;
   }
+  #speakers .card-back .details {
+    top: 30%;
+    padding: 10px;
+  }
+  
+  #speakers .card-back .details .name {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  #speakers .card-back .details .seperator {
+    margin: 5px 0;
+    height: 2px;
+    width: 40px;
+  }
+  
+  #speakers .card-back .details .links {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 410px) {
@@ -1128,6 +1187,25 @@ footer {
     width: 140px;
     height: 180px;
     margin: 5px;
+  }
+  #speakers .card-back .details {
+    top: 20%;
+    padding: 10px;
+  }
+  
+  #speakers .card-back .details .name {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  #speakers .card-back .details .seperator {
+    margin: 5px 0;
+    height: 2px;
+    width: 40px;
+  }
+  
+  #speakers .card-back .details .links {
+    margin-top: 30px;
   }
 }
 
@@ -1139,5 +1217,24 @@ footer {
     width: 43vw;
     height: 55vw;
     margin: 5px;
+  }
+  #speakers .card-back .details {
+    top: 20%;
+    padding: 8px;
+  }
+  
+  #speakers .card-back .details .name {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  #speakers .card-back .details .seperator {
+    margin: 5px 0;
+    height: 2px;
+    width: 40px;
+  }
+  
+  #speakers .card-back .details .links {
+    margin-top: 6vh;
   }
 }
