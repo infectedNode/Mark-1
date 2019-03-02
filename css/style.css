@@ -438,11 +438,11 @@ footer {
   overflow: hidden;
 }
 
-#speakers .members.active {
+#speakers .members.head {
   height: auto;
 }
 
-#speakers .head {
+#speakers .members.active {
   height: auto;
 }
 
@@ -928,6 +928,10 @@ footer {
 
   #intro { height: 100vh; }
 
+  #speakers .members {
+    height: 350px;
+  }
+
   #speakers .members .card {
     width: 160px;
     height: 205px;
@@ -1065,6 +1069,10 @@ footer {
     transform: translate(0px,0px);
   }
 
+  #speakers .members {
+    height: 260px;
+  }
+
   #speakers .members .card {
     width: 120px;
     height: 155px;
@@ -1105,6 +1113,9 @@ footer {
     letter-spacing: 15px;
     font-size: 30px;
   }
+  #speakers .members {
+    height: 200px;
+  }
   #speakers .members .card {
     width: 180px;
     height: 230px;
@@ -1121,6 +1132,9 @@ footer {
 }
 
 @media (max-width: 375px) {
+  #speakers .members {
+    height: 234px;
+  }
   #speakers .members .card {
     width: 43vw;
     height: 55vw;
