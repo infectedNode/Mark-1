@@ -297,7 +297,7 @@ footer {
     Intro section
 -----------------------------------------*/
 #intro {
-    background: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../images/intro-bg1.jpeg') fixed;
+    background: linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../images/intro-bg1.jpg') fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -602,7 +602,7 @@ footer {
 }
 
 #program img {
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .nav-tabs {
@@ -1067,10 +1067,6 @@ footer {
     width: 120px;
     height: 155px;
     margin: 5px;
-  }
-
-  #program img {
-    padding-bottom: 32px;
   }
 
   #sponsors img {
