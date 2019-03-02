@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+#overview p
+{
+  font-family: 'Montserrat', 'Poppins',sans-serif;
+}
+
 body {
 		background: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -362,7 +368,6 @@ footer {
 -----------------------------------------*/
 #overview img {
   position: relative;
-  padding-bottom: 32px;
 }
 
 
@@ -598,6 +603,7 @@ footer {
 }
 
 #program span {
+    margin-top: 3px;
     padding-right: 12px;
 }
 
@@ -775,7 +781,7 @@ footer {
    Contact section
 -----------------------------------------*/
 #contact {
-    background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/contact-bg.png') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
 }
@@ -968,7 +974,7 @@ footer {
   }
 
   .custom-navbar .navbar-toggler.active .bar-2 {
-    opacity: 0;
+    	opacity : 0;
   }
 
   .custom-navbar .navbar-toggler.active .bar-3 {
