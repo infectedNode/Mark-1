@@ -30,9 +30,14 @@ $(document).ready(function() {
     });
 
     $('.custom-navbar .navbar-toggler').click(function() {
-        $('.custom-navbar .navbar-toggler-back').toggleClass('active');
-        $('.custom-navbar .navbar-body').toggleClass('active');
-        $('.custom-navbar .navbar-toggler').toggleClass('active');
+      $('.custom-navbar .navbar-toggler-back').toggleClass('active');
+      $('.custom-navbar .navbar-body').toggleClass('active');
+      $('.custom-navbar .navbar-toggler').toggleClass('active');
+    });
+
+    $('#speakers .members-control .btn').click(function(){
+      $('#speakers .members').addClass('active');
+      $('#speakers .members-control').addClass('remove');
     });
 
  /* Parallax section
