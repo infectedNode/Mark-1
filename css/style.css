@@ -1120,10 +1120,10 @@ footer {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 375px) {
   #speakers .members .card {
-    width: 120px;
-    height: 155px;
+    width: 43vw;
+    height: 55vw;
     margin: 5px;
   }
 }
